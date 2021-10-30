@@ -37,7 +37,7 @@ int main()
     }
 
     /* Print the result */
-    printf("%.2f %c %.2f = %.2f", num1, opt, num2, result);
+    printf("The result of the arithmetic operation is = %.2f", result);
 
     return 0;
 }
