@@ -3,32 +3,32 @@
 
 int main()
 {
-    char op;
+    int opt;
     float num1, num2, result=0.0f;
 
 
     printf("Input two numbers \n");
     scanf("%f %f", &num1, &num2);
 
-    printf("Select the operation to perform [+ - * /] \n");
-    scanf("%c", &op);
+    printf("Select the choice(1-4) to perform the operation [1.Addition, 2. Subtraction, 3.Multiplication, 4.Division] \n");
+    scanf("%d", &opt);
 
 
-    switch(op)
+    switch(opt)
     {
-        case '+': 
+        case 1: 
             result = add(num1, num2);
             break;
 
-        case '-': 
+        case 2: 
             result = sub(num1, num2);
             break;
 
-        case '*': 
+        case 3: 
             result = mult(num1, num2);
             break;
 
-        case '/': 
+        case 4: 
             result = divi(num1, num2);
             break;
 
@@ -37,7 +37,7 @@ int main()
     }
 
     /* Print the result */
-    printf("%.2f %c %.2f = %.2f", num1, op, num2, result);
+    printf("%.2f %c %.2f = %.2f", num1, opt, num2, result);
 
     return 0;
 }
