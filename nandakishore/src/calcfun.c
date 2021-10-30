@@ -19,7 +19,7 @@ float mult(float num1, float num2)
 }
 
 //Function to divide two numbers
-float div(float num1, float num2)
+float divi(float num1, float num2)
 {
     return num1 / num2;
 }

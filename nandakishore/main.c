@@ -29,7 +29,7 @@ int main()
             break;
 
         case '/': 
-            result = div(num1, num2);
+            result = divi(num1, num2);
             break;
 
         default: 
